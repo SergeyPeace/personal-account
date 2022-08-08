@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объявления</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2 class="header__title">Все мои объявления</h2>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">Активные <span class="item__count">4</span></li>
+                <li class="nav__item">Архив <span class="item__count">2</span></li>
+                <li class="nav__item">Черновики <span class="item__count">2</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="btn__panel">
+            <input type="checkbox" id="checkbox-0"><label for="checkbox-0"></label>
+            <button class="btn__remove-publication">Снять с публикации</button>
+            <select class="btn__category" name="category" id="category">
+                <option value="Задания">Задания</option>
+                <option value="Услуги">Услуги</option>
+                <option value="Вакансии">Вакансии</option>
+                <option value="Резюме">Резюме</option>
+                <option value="Куплю">Куплю</option>
+                <option value="Продам">Продам</option>
+                <option value="Лоты">Лоты</option>
+                <option value="Тендеры">Тендеры</option>
+                <option selected value="Все">Все</option>
+            </select>
+            <select name="sorting" id="sorting">
+                <option selected value="Дата вверх">По дате публикации ↑</option>
+                <option value="Дата вниз">По дате публикации ↓</option>
+                <option value="Цена вверх">По цене ↑</option>
+                <option value="Цена вниз">По цене ↓</option>
+            </select>
+        </div>
+
+        <section class="ads__container">
+            <ul class="ads__list">
+                <li class="ads__item category-task promotion-premium">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-1"><label for="checkbox-1"></label>
+                        <span class="ads__category"></span>
+
+                        <div class="swiper" aria-label="На слайдах запечатлен товар">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Сделать что-то</h3>
+                        <span class="ads__price">50 900 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Тип задания: одноэтапное</span>
+                        <span class="ads__type-publication">Тип публикации: горящее</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="responses">Отклики <span class="responses__counter">4 <span class="responses__plus-point">+1</span></span></span>
+                        <span class="views"><span class="views__counter">211</span> просмотров</span>
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <span class="suitable">Подходят <span class="suitable__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                        <button class="btn-options"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-buy promotion-premium">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-2"><label for="checkbox-2"></label>
+                        <span class="ads__category"></span>
+
+                        <div class="swiper" aria-label="На слайдах запечатлен товар">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-two.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Куплю планшет Samsung</h3>
+                        <span class="ads__price">5 000 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: всем зарегистрированным</span>
+                        <span class="ads__type-publication">Тип публикации: премиум</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="offers">Предложения <span class="offers__counter">3</span></span>
+                        <span class="views"><span class="views__counter">211</span> просмотров</span>
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                        <button class="btn-options"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-sell promotion-top">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-3"><label for="checkbox-3"></label>
+                        <span class="ads__category"></span>
+
+                        <div class="swiper" aria-label="На слайдах запечатлен товар">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-three.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Продам кроссовки</h3>
+                        <span class="ads__price">5 000 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: всем зарегистрированным</span>
+                        <span class="ads__type-publication">Тип публикации: поднятие в топ</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="offers">Предложения <span class="offers__counter">3</span></span>
+                        <span class="views"><span class="views__counter">20</span> просмотров</span>
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                        <button class="btn-options"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-vacancy moderation">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-4"><label for="checkbox-4"></label>
+                        <span class="ads__category"></span>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Художник</h3>
+                        <span class="ads__price">50 900 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: открытая</span>
+                        <span class="ads__type-publication">Тип публикации: бесплатно</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="responses">Отклики <span class="responses__counter">3 <span class="responses__plus-point">+1</span></span></span>
+                        <span class="invited">Приглашены <span class="invited__counter">3</span></span>
+                        <span class="views"><span class="views__counter">268</span> просмотров</span>      
+                        <span class="suitable">Подходят <span class="suitable__counter">16</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                        <button class="btn-options"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-lot">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-5"><label for="checkbox-5"></label>
+                        <span class="ads__category"></span>
+
+                        <div class="swiper" aria-label="На слайдах запечатлен товар">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-five.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Царские монеты</h3>
+                        <span class="ads__price">17 000 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: всем зарегистрированным</span>
+                        <span class="ads__type-publication">Тип аукциона: открытый</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="bids">Ставки <span class="bids__counter">4 <span class="bids__plus-point">+1</span></span></span>
+                        <span class="views"><span class="views__counter">211</span> просмотров</span>
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-tender rejected">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-6"><label for="checkbox-6"></label>
+                        <span class="ads__category"></span>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Царские монеты</h3>
+                        <span class="ads__price">17 000 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: всем зарегистрированным</span>
+                        <span class="ads__type-publication">Тип тендера: открытый</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="requests">Заявки <span class="requests__counter">4 <span class="requests__plus-point">+1</span></span></span>
+                        <span class="views"><span class="views__counter">211</span> просмотров</span>
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                    </div>
+                </li>
+
+                <li class="ads__item category-resume">
+                    <div class="ads__image">
+                        <span class="additional-parameter"></span>
+                        <input class="ads__checkbox" type="checkbox" id="checkbox-7"><label for="checkbox-7"></label>
+                        <span class="ads__category"></span>
+
+                        <div class="swiper" aria-label="На слайдах запечатлен товар">
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-seven.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/ads__item/ads__item-one.jpg" alt="Слайдер">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="ads__information">
+                        <h3 class="ads__title">Консультант</h3>
+                        <span class="ads__price">53 000 ₽</span>
+                        <span class="ads__time">Осталось 20 дней</span>
+                        <span class="ads__address">Санкт-Петербург, ст. м. Маяковская</span>
+                        <span class="ads__visibility">Видимость: всем зарегистрированным</span>
+                        <span class="ads__type-publication">Тип публикации: бесплатно</span>
+                    </div>
+                    <div class="ads__statistics">
+                        <span class="responses">Мои отклики <span class="responses__counter">4 <span class="responses__plus-point">+1</span></span></span>
+                        <span class="invited">Приглашены <span class="invited__counter">3</span></span>
+                        <span class="views"><span class="views__counter">211</span> просмотров</span>      
+                        <span class="favourites">В избранном <span class="favourites__counter">0</span></span>
+                        <div class="progress">
+                            <span class="progress__scale"></span>
+                            <span class="progress__percents">48%</span>
+                        </div>
+                    </div>
+                    <div class="ads__btn-list">
+                        <button class="btn-make-top"></button>
+                        <button class="btn-edit"></button>
+                        <button class="btn-remove"></button>
+                        <button class="btn-options"></button>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
